@@ -8,8 +8,8 @@ const StyledInput = styled.input`
   border: 1px solid lightblue;
 `;
 
-const [value, setValue] = useState("");
 function userInput(defaultValue) {
+  const [value, setValue] = useState("");
   // const [value, setValue] = useState("");
   function onChange(e) {
     setValue(e.target.value);
@@ -20,7 +20,7 @@ function userInput(defaultValue) {
 
 const PATH_OF_EXILE_OAUTH_URL = "https://www.pathofexile.com/oauth/authorize";
 // const CLIENT_ID = "REPLACE_WITH_MY_ID"; // Replace with your actual client ID
-const CLIENT_ID = { value }; //"";
+const CLIENT_ID = { value }; //"poejewelersassistant";
 const REDIRECT_URI = "https://poejewellersassistant.netlify.app/success/"; // Replace with your actual redirect URI
 const SCOPES = "profile"; // Replace with the desired scope(s) for the API
 
