@@ -1,27 +1,26 @@
-import { useState } from "react";
 import "./App.css";
-import Menu from "./Components/Menu";
-import Header from "./Components/Header";
-import Characters from "./Components/Characters";
-import StashTab from "./Components/StashTab";
+import { HashRouter, Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home";
+import Characters from "./Pages/Characters";
+import Stash from "./Pages/Stash";
+import Calculator from "./Pages/Calculator";
+import Success from "./Pages/Success";
+import NotFound from "./Pages/NotFound";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [loggedIn, setLoggedIn] = useState(false);
-
   return (
-    <div className="canvas">
-      <div>
-        <div>
-          <Header />
-        </div>
-      </div>
-      <div className="container">
-        <Menu />
-        {/* <Characters /> */}
-        <StashTab />
-      </div>
-    </div>
+    <HashRouter>
+      <Routes>
+        <Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/characters" element={<Characters />} />
+          <Route path="/stash" element={<Stash />} />
+          <Route path="/calculator" element={<Calculator />} />
+          <Route path="/success" element={<Success />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </HashRouter>
   );
 }
 
