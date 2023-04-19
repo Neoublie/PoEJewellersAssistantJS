@@ -2,6 +2,7 @@ import React from "react";
 
 import Header from "../Components/Header";
 import Menu from "../Components/Menu";
+import About from "../Components/About";
 
 function generateCodeVerifier() {
   const codeVerifierLength = 64;
@@ -19,24 +20,22 @@ function generateCodeVerifier() {
 
 const Home = () => {
   return (
-    <>
+    <div className="canvas">
       <h1>Development</h1>
-      <div className="canvas">
-        <div>
-          <div className="banner">
-            <Header />
-          </div>
-        </div>
-        <div className="container">
-          <Menu />
-          {/* <Characters /> */}
-          {/* <StashTab /> */}
-          <div>
-            <p>{generateCodeVerifier()}</p>
-          </div>
-        </div>
+
+      <div className="banner">
+        <Header />
       </div>
-    </>
+
+      <div className="container">
+        <Menu />
+        <About />
+      </div>
+
+      {/* <div>
+        <p>{generateCodeVerifier()}</p>
+      </div> */}
+    </div>
   );
 };
 

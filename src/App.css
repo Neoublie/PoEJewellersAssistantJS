@@ -38,13 +38,13 @@
   color: #1a1a1a;
 }
 
-.characters {
+.character {
   display: flex;
   flex-wrap: wrap;
   border: 0rem solid black;
 }
 
-.characters .card {
+.character .card {
   min-width: 250px;
   border-radius: 1rem;
   border: 0.1rem solid red;
