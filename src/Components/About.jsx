@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="canvas">
+    <div>
       <h3>About</h3>
       <p>
         this is an application to assist you to find the best combination of

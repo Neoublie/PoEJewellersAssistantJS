@@ -32,27 +32,29 @@ const Character = () => {
   };
 
   return (
-    <section className="character">
-      <div key={id} className="card">
-        <h5>{name}</h5>
-        {/* <p>{character.class}</p> */}
-        <p>League: {league}</p>
-        <p>level: {level}</p>
-        <p>exp: {experience}</p>
+    <main>
+      <article className="character-card">
+        <section className="character">
+          <div key={id} className="card">
+            <p>Character</p>
+            <h5>{name}</h5>
+            {/* <p>{character.class}</p> */}
+            <p>League: {league}</p>
+            <p>level: {level}</p>
+            <p>exp: {experience}</p>
 
-        <div className="btn-container">
-          <button className="prev-btn" onClick={prevCharacter}>
-            <FaChevronLeft />
-          </button>
-          <button className="next-btn" onClick={nextCharacter}>
-            <FaChevronRight />
-          </button>
-        </div>
-        {/* <button className="btn btn-hipster" onClick={randomPerson}>
-          supprise me
-        </button> */}
-      </div>
-    </section>
+            <div className="btn-container">
+              <button className="prev-btn" onClick={prevCharacter}>
+                <FaChevronLeft />
+              </button>
+              <button className="next-btn" onClick={nextCharacter}>
+                <FaChevronRight />
+              </button>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
   );
 };
 

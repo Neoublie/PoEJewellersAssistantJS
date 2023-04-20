@@ -1,6 +1,8 @@
 import React from "react";
+import Header from "../Components/Header";
+import Menu from "../Components/Menu";
 
-const Success = () => {
+const Leagues = () => {
   return (
     <div className="canvas">
       <h1>Development</h1>
@@ -11,10 +13,12 @@ const Success = () => {
 
       <div className="container">
         <Menu />
-        <div className="content">Success from api Url Redirect</div>
+        <div className="content">
+          <div>Will have League info here</div>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Success;
+export default Leagues;

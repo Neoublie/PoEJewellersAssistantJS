@@ -6,23 +6,36 @@ const Menu = () => {
     <div className="menu">
       <ul>
         <li className="menu_item">
-          <Link to="/">Home</Link>
+          <Link to="/">
+            <span className="linkButton">Home</span>
+          </Link>
         </li>
         <li className="menu_item">
-          <Link to="/leagues">leagues</Link>
+          <Link to="/leagues">
+            <span className="linkButton">leagues</span>
+          </Link>
         </li>
         <li className="menu_item">
-          <Link to="/characters">characters</Link>
+          <Link to="/characters">
+            <span className="linkButton">characters</span>
+          </Link>
         </li>
         <li className="menu_item">
-          <Link to="/stash">stash</Link>
+          <Link to="/stash">
+            <span className="linkButton">stash</span>
+          </Link>
         </li>
         <li className="menu_item">
+          <Link to="/debug">
+            <span className="linkButton">debug</span>
+          </Link>
+        </li>
+        {/* <li className="menu_item">
           <button type="button" className="btn">
-            {/* {loggedIn ? "Logout" : "Login"} */}
+            {loggedIn ? "Logout" : "Login"}
           </button>
         </li>
-        <li>&copy; dragontech developments</li>
+        <li>&copy; dragontech developments</li> */}
       </ul>
     </div>
   );

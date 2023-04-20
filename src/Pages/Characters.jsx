@@ -6,7 +6,7 @@ import Menu from "../Components/Menu";
 const Characters = () => {
   return (
     <div className="canvas">
-      <h1>Characters</h1>
+      <h1>Development</h1>
 
       <div className="banner">
         <Header />
@@ -14,7 +14,9 @@ const Characters = () => {
 
       <div className="container">
         <Menu />
-        <Character />
+        <div className="content">
+          <Character />
+        </div>
       </div>
     </div>
   );
