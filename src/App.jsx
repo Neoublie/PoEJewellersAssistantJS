@@ -1,5 +1,5 @@
 import "./App.css";
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import Characters from "./Pages/Characters";
 import Stash from "./Pages/Stash";
@@ -11,7 +11,7 @@ import Leagues from "./Pages/Leagues";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route>
           <Route path="/" element={<Home />} />
@@ -24,7 +24,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
