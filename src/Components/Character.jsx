@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import characters from "../Data/data";
-import { FaChevronLeft, FaChevronRight, FaQuoteRight } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight, FaQuoteRight } from "react-icons/all";
 
 const Character = () => {
   const [index, setIndex] = useState(0);
