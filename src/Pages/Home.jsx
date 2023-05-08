@@ -7,8 +7,6 @@ import About from "../Components/About";
 const Home = () => {
   return (
     <div className="canvas">
-      <h1>Development</h1>
-
       <div className="banner">
         <Header />
       </div>

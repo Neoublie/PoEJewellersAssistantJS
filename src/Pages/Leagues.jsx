@@ -5,8 +5,6 @@ import Menu from "../Components/Menu";
 const Leagues = () => {
   return (
     <div className="canvas">
-      <h1>Development</h1>
-
       <div className="banner">
         <Header />
       </div>

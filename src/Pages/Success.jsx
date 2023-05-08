@@ -5,15 +5,15 @@ import Menu from "../Components/Menu";
 const Success = () => {
   return (
     <div className="canvas">
-      <h1>Development</h1>
-
       <div className="banner">
         <Header />
       </div>
 
       <div className="container">
         <Menu />
-        <div className="content">Success from api Url Redirect</div>
+        <div className="content">
+          <h5>Success from api Url Redirect</h5>
+        </div>
       </div>
     </div>
   );

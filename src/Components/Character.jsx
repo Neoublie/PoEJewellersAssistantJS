@@ -1,11 +1,18 @@
 import React, { useState } from "react";
 import characters from "../Data/data";
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from "react-icons/all";
+// import _ from "lodash";
+
+// const modifiedCharacters = _.mapKeys(characters, (value, key) => {
+//   console.log(value);
+//   return key === "class" ? "charClass" : key;
+// });
+
+//console.log(modifiedCharacters);
 
 const Character = () => {
   const [index, setIndex] = useState(0);
-  const { id, name, league, level, experience } = characters[index];
-  // const [charaters, setCharacters] = useState(data);
+  const { id, name, charClass, league, level, experience } = characters[index];
 
   const checkNumber = (number) => {
     if (number > characters.length - 1) {
@@ -33,12 +40,11 @@ const Character = () => {
 
   return (
     <main>
-      <article className="character-card">
-        <section className="character">
+      <div className="character-card">
+        <div className="character">
           <div key={id} className="card">
-            <p>Character</p>
             <h5>{name}</h5>
-            {/* <p>{character.class}</p> */}
+            <p>Class: {charClass}</p>
             <p>League: {league}</p>
             <p>level: {level}</p>
             <p>exp: {experience}</p>
@@ -52,8 +58,8 @@ const Character = () => {
               </button>
             </div>
           </div>
-        </section>
-      </article>
+        </div>
+      </div>
     </main>
   );
 };

@@ -273,18 +273,23 @@ ul {
 /*==========================================================*/
 /* Site specific CSS 
 /*==========================================================*/
-/* body {
+body {
   background-color: #222;
-} */
+  background-image: url("./assets/crucible-bg.jpg");
+  margin-top: 35px;
+}
 
 .canvas {
-  /* height: 100vh; */
   margin: 1.5rem;
-  min-width: 600px;
-  background-color: beige;
+  width: 90vw;
+  min-width: 800px;
+  background-color: rgba(170, 170, 170, 0.9);
+  /* rgb(170, 170, 170);*/
   border-radius: 2.5rem;
   border: 0.025rem solid #064e3b;
   padding: 2rem;
+  margin: auto;
+
 }
 
 .canvas h1 {
@@ -352,13 +357,9 @@ ul {
 }
 
 .character .card {
-  width: 500px;
-  height: 250px;
-  padding: 10px;
-
-  min-width: 250px;
+  /* min-width: 150px; */
+  /* height: 250px; */
   border-radius: 1rem;
-  /* border: 0.1rem solid red; */
   margin-bottom: 1rem;
 }
 
@@ -372,7 +373,6 @@ ul {
   color: var(--primary-500);
   text-shadow: 2px 2px 5px var(--primary-300);
   margin: 15px;
-  ;
 }
 
 .characters p {
