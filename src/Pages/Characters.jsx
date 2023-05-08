@@ -6,8 +6,6 @@ import Menu from "../Components/Menu";
 const Characters = () => {
   return (
     <div className="canvas">
-      <h1>Development</h1>
-
       <div className="banner">
         <Header />
       </div>
